@@ -1,0 +1,196 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./static/cs.css"> 
+        <style>
+          *
+          {
+              font-family: 'Poppins', sans-serif;
+              margin: 0;
+              padding: 0;
+              scroll-padding-top: 1rem;
+              scroll-behavior: smooth;
+              list-style: none;
+              text-decoration: none;
+              box-sizing: border-box;
+          }
+          .textbox
+          {
+              padding: 20px 30px;
+              background-color: #fff;
+              position: relative;
+              border-radius: 6px;
+              font-size: 15px;
+          }
+
+          .navbar
+          {
+              background-color:#2e364a;
+              width: 100%;
+              height: 70px;
+          }
+
+          .about-section {
+              padding: 50px;
+              text-align: center;
+              background-color: #ffffff;
+              color: rgb(0, 0, 0);
+            }
+
+          .nav
+          {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 20px 35px;
+          }
+
+          #menu-icon
+          {
+              font-size: 24px;
+              cursor: pointer;
+              color: white;
+              display: none;
+          }
+
+          .logo
+          {
+              font-size: 2rem;
+              font-weight: 700;
+              color: white
+          }
+
+          .navbar-a
+          {
+              display: flex;
+              column-gap: 2rem;
+          }
+
+          .navbar-a a
+          {
+              color: white;
+              font-size: 1rem;
+              text-transform: uppercase;
+              font-weight: 500;
+          }
+
+          .navbar-a a:hover
+          {
+              color: white;
+      
+              border: 2px solid black;
+              border-bottom: 2px solid white;
+          }
+      </style>
+    </head> 
+    
+    <body>
+      <div class="navbar">
+        <div class="nav container2">
+            <a href="#" class="logo">Diabetes prediction</a>
+        <ul class="navbar-A">
+            <li><a href="{{url_for('index')}}">HOME</a></li>
+
+            <li><a href="{{url_for('ui')}}">PREDICT</a></li>
+            <li><a href="{{url_for('about')}}">ABOUT</a></li>
+            <li><a href="{{url_for('service')}}">SERVICE</a></li>
+        </ul>
+        </div>
+    </div>
+
+        <div class="about-section">
+            <h1>Best Doctor </h1>
+            <p>search your nearest best Diabetologist</p>
+        </div>
+        <h2 style="text-align:center">Top Diabetologist in india</h2>
+
+
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="./static/8.jfif" alt="Jane" style="width:100%">
+                <div class="container">
+                  <h2>Dr. Ajay Kaul</h2>
+                  <p class="title">Fortis Hospital, Noida</p>
+                  <p>Chairman , MBBS, MS, MCh, Fellowship, 38 years of experience</p>
+                  <p>8765124598</p>
+                  <p><button class="button">New Delhi, India</button></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="./static/2.jfif" alt="Mike" style="width:100%">
+                <div class="container">
+                  <h2>Dr. swati birla</h2>
+                  <p class="title">Fortis Hospital</p>
+                  <p>Chairman , DNB, MCh, MS, MBBS,40 years of experience</p>
+                  <p>9856341208</p>
+                  <p><button class="button">Bangalore (Bannerghatta Road)</button></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="./static/1.jfif" alt="John" style="width:100%">
+                <div class="container">
+                  <h2>Dr. abhira chandramukhi</h2>
+                  <p class="title">Sanar International Hospital</p>
+                  <p>Director & Head of the Department,33 years of experience </p>
+                  <p>8745342398</p>
+                  <p><button class="button">Gurgaon, India</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="./static/4.jfif" alt="John" style="width:100%">
+              <div class="container">
+                <h2>Dr. Hina Narayan Chakravarti.</h2>
+                <p class="title">Medanta - The Medicity, Gurgaon</p>
+                <p>Head of Department , MBBS, MS, MCh, Fellowship, Fellowship, 30 years of experience</p>
+                <p>438976341209</p>
+                <p><button class="button">Gurgaon, India</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+              <img src="./static/11.jfif" alt="John" style="width:100%">
+              <div class="container">
+                <h2>Dr. A. Chandra</h2>
+                <p class="title">sanar International Hospital, Gurgaon</p>
+                <p>Director , MBBS, MD, DM, MRCP,32 years of experience</p>
+                <p>9867452378</p>
+                <p><button class="button">Gurgaon , India</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+              <img src="./static/7.jfif" alt="John" style="width:100%">
+              <div class="container">
+                <h2>Dr. Chythanya Banerjee</h2>
+                <p class="title">Kokilaben Dhirubhai Ambani Hospital</p>
+                <p>Head of Department , MBBS, MS, MCh, Fellowship, Fellowship, 30 years of experience</p>
+                <p>8956431298</p>
+                <p><button class="button">Mumbai, India</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+    </body>
+</html>    
+
+
+

@@ -1,0 +1,151 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="./static/index.css">
+
+        <style>
+            *
+            {
+                font-family: 'Poppins', sans-serif;
+                margin: 0;
+                padding: 0;
+                scroll-padding-top: 1rem;
+                scroll-behavior: smooth;
+                list-style: none;
+                text-decoration: none;
+                box-sizing: border-box;
+            }
+            .textbox
+            {
+                padding: 20px 30px;
+                background-color: #fff;
+                position: relative;
+                border-radius: 6px;
+                font-size: 15px;
+            }
+
+            .navbar
+            {
+                background-color:#2e364a;
+                width: 100%;
+                height: 70px;
+            }
+
+            .about-section {
+                padding: 50px;
+                text-align: center;
+                background-color: #ffffff;
+                color: rgb(0, 0, 0);
+              }
+
+            .nav
+            {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 35px;
+            }
+
+            #menu-icon
+            {
+                font-size: 24px;
+                cursor: pointer;
+                color: white;
+                display: none;
+            }
+
+            .logo
+            {
+                font-size: 2rem;
+                font-weight: 700;
+                color: white
+            }
+
+            .navbar-a
+            {
+                display: flex;
+                column-gap: 2rem;
+            }
+
+            .navbar-a a
+            {
+                color: white;
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+
+            .navbar-a a:hover
+            {
+                color: white;
+        
+                border: 2px solid black;
+                border-bottom: 2px solid white;
+            }
+        </style>
+    </head>
+        <body>
+            
+            <div class="navbar">
+                <div class="nav container2">
+                    <a href="#" class="logo">Diabetes prediction</a>
+                <ul class="navbar-A">
+                    <li><a href="{{url_for('index')}}">HOME</a></li>
+
+                    <li><a href="{{url_for('ui')}}">PREDICT</a></li>
+                    <li><a href="{{url_for('service')}}">SERVICE</a></li>
+                    <li><a href="{{url_for('doctor')}}">DOCTOR</a></li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h1>About Our Website </h1>
+                <p>More than a quarter of the population was either diabetic or in pre-diabetic stage. 11.4% of India’s population or 101 million people are living with diabetes. Whereas 15.3% of the population or an additional 136 million people are pre-diabetic. This is concerning as the researchers say that almost half of the pre-diabetics may convert to diabetes within five years or so.</p>
+                <p>type 2 diabetes is a serious, chronic health condition that can lead to other serious health issues such as heart disease, stroke, blindness, and kidney failure. If you can prevent or even delay getting type 2 diabetes, you can lower your risk for all those other conditions. </p> 
+                <p>In the market, 
+                    There are only diabetes prediction websites in the market, not with solutions.
+                    In our website we will provide other features like how to take care of it, which routine is good for you, which doctor is best for you in nearby place and other city. we are giving you a proper guide.</p>
+            </div>
+
+            <div class="timeline">
+
+                <div class="container left-container">
+     
+                   
+                    <div class="textbox">
+                 <div class="image">
+                    <img src="./static/photo.jpeg">
+          </div>	
+                        <h2>prinsi kakadiya</h2>
+                        <small class>student - mitwpu</small>
+    <p> education: mca science </p>
+                        <p>
+                            Punctual, Obey rule, highly efficient and passionate for learning new concept ,ideas, techniques,
+    Aim too.
+                        </p>
+                        <span class="left-container-arrow"></span>
+                    </div>
+    
+                </div>
+    
+                <div class="container right-container">
+                    <div class="image">
+            <img src="./static/kalpesh.jpeg">
+          </div>	
+                    <div
+                        class="textbox">
+                        <h2>kalpesh rathod</h2>
+                        <small class>student - mitwpu</small>
+    <p> education: mca science </p>
+                        <p>
+                            Good learner,Team player,Good listener.
+                        </p>
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+               
+            </div>
+
+        </body>
+</html>

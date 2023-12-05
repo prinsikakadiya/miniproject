@@ -1,0 +1,49 @@
+<html> 
+    <head> 
+        <title>Diabetes Prediction</title>
+        <link rel="stylesheet" href="./static/ui2.css"> 
+        
+    </head> 
+    <body>  
+    
+        <div class="bg-img"> 
+            <div class="content">
+                <header>Check Diabetes</header>
+                <div class="form1">
+                <form action="{{url_for('predict')}}" method="post">
+
+                    <div class="field space">
+                        <input type="number" min="0" max="1" name="a" id ="name" placeholder=" gender(0 = male,1 = female)" required> 
+                    </div> 
+                    <div class="field space">
+                        <input type="number" name="b" id ="name" placeholder=" age" step="any" required> 
+                    </div> 
+                    <div class="field space">
+                        <input type="number" min="0" max="1" name="c" id ="name" placeholder=" hypertension(0 to 1)" required> 
+                    </div>
+                    <div class="field space">
+                        <input type="number" min="0" max="1" name="d" id ="name" placeholder=" heart_disease(0 to 1)" required> 
+                    </div> 
+                    <div class="field space">
+                        <input type="number" min="0" max="5" name="e" id ="name" placeholder=" smoking_history(0 to 5)" required> 
+                    </div> 
+                    <div class="field space">
+                        <input type="number" name="f" id ="name" placeholder=" bmi" step="any" required> 
+                    </div> 
+                    <div class="field space">
+                        <input type="number" name="g" id ="name" placeholder=" HbA1c_level" step="any" required> 
+                    </div> 
+                    <div class="field space">
+                        <input type="number" name="h" id ="name" placeholder=" blood_glucose_level" required> 
+                    </div> 
+                    <br>
+                    <button type="submit" class="btn" id="submit" value='predict!'>Predict</button>
+                    <br>
+                </form>
+                </div>
+                <b><p style="color: #090909; text-align: center; font-size: 15px; ">{{pred}}</p></b>
+            </div>
+        </div>
+        
+    </body>
+</html>        
